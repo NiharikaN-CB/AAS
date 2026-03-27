@@ -31,3 +31,13 @@ def generate_traffic(num_samples=200):
 
 if __name__ == "__main__":
     generate_traffic()
+
+#Simulates AI attacker → generates fake network traffic → saves it → used for training defense model
+
+#This module simulates different types of network traffic including normal behavior, port scanning, and brute-force attacks. 
+# It generates realistic feature patterns such as packet size, duration, and failed login attempts, 
+# which are then used to train our intrusion detection system. 
+# These features were chosen because they are commonly used 
+# indicators in network security — for example, high failed login attempts
+#  indicate brute-force attacks, while very short connection
+#  durations indicate port scanning.
